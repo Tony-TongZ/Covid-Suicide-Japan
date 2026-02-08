@@ -1,5 +1,5 @@
 # Balancing-COVID-19-deaths-and-suicides-in-Japan-A-critical-trade-off-of-the-pandemic
-Code and data for the analysis
+Code and data for the analysis.
 ## Overview
 This repository contains the data and R code used in the analysis of the trade-off between COVID-19-related deaths and excess suicides in Japan during the pandemic period.
 
