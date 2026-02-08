@@ -15,19 +15,25 @@ All datasets used in this study are publicly available (open data) and are provi
   
 ## Code
 All analysis scripts are written in R and are located in the `code/` directory.  
-The scripts are intended to be executed in the following order:
+The scripts should be executed in the order listed below. Note that Scripts `05_Random_effects_model.R` and `06_Correlation_analysis.R` need to be run after Scripts `01`–`04` within the same R session, as they rely on objects created in earlier scripts.
 
-1. `01_prepare_data.R`  
-   Data cleaning, preprocessing, and construction of analysis variables.
+1. `01_analysis_excess_suicide.R`  
+   Estimates baseline and excess suicides by sex and age group using time-series models.
 
-2. `02_fit_model.R`  
-   Model specification and estimation (e.g., Bayesian models and SEIR-related analyses).
+2. `02_analysis_excess_unemployment.R`  
+   Estimates baseline and excess unemployment by sex and age group using time-series models.
 
-3. `03_postprocess.R`  
-   Post-estimation processing, including uncertainty quantification and summary statistics.
+3. `03_analysis_excess_depression.R`  
+   Estimates baseline and excess Social Mood Index (depression) for the overall population using time-series models.
 
-4. `04_make_figures.R`  
-   Generation of tables and figures reported in the manuscript.
+4. `04_SEIR_model.R`  
+   Implements the SEIR model and performs epidemic-related simulations and analyses.
+
+5. `05_Random_effects_model.R`  
+   Estimates the random effects model to account for heterogeneity across groups or time periods and performs post-processing of the corresponding results.
+
+6. `06_Correlation_analysis.R`  
+   Performs correlation analyses among key variables to inform the selection of time lags.
 
 ## Reproducibility
 ### Software environment
